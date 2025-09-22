@@ -167,12 +167,6 @@ impl Config {
     }
 }
 
-#[derive(Serialize, Deserialize, Debug)]
-pub struct RawUpper {
-    addr: SocketAddr,
-    group_id: String,
-}
-
 /// parse raw file content to Config.
 #[derive(Serialize, Deserialize, Debug)]
 pub struct RawConfig {
